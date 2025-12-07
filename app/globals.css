@@ -63,7 +63,7 @@ body {
   font-style: normal;
   font-weight: 400;
 } */
-#smooth-wrapper {
+/* #smooth-wrapper {
   height: 100%;
   overflow: hidden;
 }
@@ -71,4 +71,4 @@ body {
 #smooth-content {
   will-change: transform;
 }
-
+ */
