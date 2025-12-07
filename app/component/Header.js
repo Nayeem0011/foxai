@@ -2,14 +2,16 @@
 
 import HeroPage from './HeroPage';
 import NavBar from './NavBar';
-import HeroSvg from '../svg/HeroSvg';
+import Image from 'next/image';
+import Glasseffect1 from './image/Glasseffect1.png';
 
 const Header = () => {
 
   return (
-    <div className="relative w-full overflow-hidden bg-[#D8765C]">
+    <div className="relative w-full overflow-hidden">
 
-      {/* Background & Gradient (shared for both NavBar + Hero) */}
+      {/* Background */}
+        <Image className="h-full absolute top-0 left-0 z-[-2]" src={Glasseffect1} alt="loading ..."/>
 
       {/* Foreground Content */}
       <div className="relative z-30">

@@ -14,7 +14,7 @@ const NavBar = () => {
 
   return (
     <div className="relative inset-0 z-10 flex justify-center w-full">
-      <nav className="bg-[#FFFFFF1A] flex items-center justify-between w-[1216px] max-w-[95%] h-[75px] py-3.5 px-5 rounded-[50px] absolute top-[46px] border border-[#FFFFFF1A]">
+      <nav className="bg-[#FFFFFF1A] flex items-center justify-between w-full max-w-[80%] h-[75px] py-3.5 px-5 rounded-[50px] absolute top-[46px] border border-[#FFFFFF1A]">
 
         {/* Logo */}
         <Image
