@@ -14,16 +14,10 @@ const NavBar = () => {
 
   return (
     <div className="relative inset-0 z-10 flex justify-center w-full">
-      <nav className="bg-[#FFFFFF1A] flex items-center justify-between w-full max-w-[80%] h-[75px] py-3.5 px-5 rounded-[50px] absolute top-[46px] border border-[#FFFFFF1A]">
+      <nav className="bg-[#FFFFFF1A] backdrop-blur-[20px] flex items-center justify-between w-full max-w-[80%] py-3.5 px-5 rounded-[50px] absolute top-[46px] border border-[#FFFFFF1A]">
 
         {/* Logo */}
-        <Image
-          className='cursor-pointer'
-          src={navbar_logo}
-          alt="logo"
-          width={100}
-          height={29}
-        />
+        <Image className="w-[116px]" src={navbar_logo} alt="loading ..."/>
 
         {/* Desktop Menu */}
         <ul className="text-[#B0ADBE] hidden md:flex items-center gap-4 transition-all duration-300">
@@ -34,7 +28,7 @@ const NavBar = () => {
               <li
                 key={index}
                 onClick={() => setActive(index)}
-                className={`backdrop-blur-[20px] font-normal text-[16px] leading-[120%] text-center cursor-pointer py-2.5 px-4 transition-all duration-300 rounded-full 
+                className={` font-normal text-[16px] leading-[120%] text-center cursor-pointer py-2.5 px-4 transition-all duration-300 rounded-full 
               ${isActive ? "bg-[#15081459] text-white py-2.5 px-4" : ""}
               hover:bg-[#15081459] hover:text-white hover:py-2.5 hover:px-4`}>
                 {item}
@@ -45,7 +39,7 @@ const NavBar = () => {
 
         {/* Desktop Right Button */}
         <div className="hidden md:block">
-          <div className="bg-[#F94819]  flex items-center gap-2.5 rounded-[50px] py-3.5 px-8 cursor-pointer transition-all duration-300">
+          <div className="bg-[#F94819] flex items-center gap-2.5 rounded-[50px] py-5 px-10 cursor-pointer transition-all duration-300">
             <button className="text-[#FFFFFF] font-normal text-[16px] leading-[120%] text-center cursor-pointer">
               Industries
             </button>
