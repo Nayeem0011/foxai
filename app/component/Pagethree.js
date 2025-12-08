@@ -33,7 +33,7 @@ const Pagethree = () => {
         
         {/* Left Text Section */}
         <div className='flex flex-col gap-8 lg:w-1/2'>
-          <h1 className='tradines font-semibold text-[48px] leading-[120%]'>
+          <h1 className='tradines font-semibold text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] leading-[120%]'>
             Empowering Businesses <br className='lg:block hidden' /> and Individuals with AI <br className='lg:block hidden' /> Growth
           </h1>
           <p className='text-[#9999A9] font-normal text-[18px] leading-[150%]'>

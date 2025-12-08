@@ -51,7 +51,7 @@ const Pageone = () => {
     <section className="relative w-full h-[80%] bg-[#030110] overflow-hidden">
       <div className="w-[80%] mx-auto overflow-hidden py-6">
         <div
-          className="flex gap-[77px] items-center whitespace-nowrap"
+          className="flex gap-8 md:gap-[60px] lg:gap-[77px] items-center whitespace-nowrap"
           style={{
             animation: "infinite-scroll 10s linear infinite",
           }}
@@ -62,7 +62,7 @@ const Pageone = () => {
               key={index}
               src={logo}
               alt={`logo-${index}`}
-              className=""
+              className="h-4 md:h-[30px] lg:h-[38px]"
             />
           ))}
         </div>
@@ -72,30 +72,30 @@ const Pageone = () => {
             <div className='container mx-auto'>
 
               {/* Title */}
-              <h2 className='piconsaisasz text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] pb-6 sm:pb-8 md:pb-9 lg:pb-10 xl:pb-12 2xl:pb-16'>
+              <h2 className='pageonetitle text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] pb-6 sm:pb-8 md:pb-9 lg:pb-10 xl:pb-12 2xl:pb-16'>
                 Pioneering AI consulting to drive innovation, <br className='lg:block hidden' /> efficiency, and growth for businesses.
               </h2>
-              
+
               <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {items.map((item) => (
                   <div key={item.id} className="">
-                    
+
                     {/* Card wrapper */}
-                    <div className="poicsebsa rounded-[20px]! ">
-                     
+                    <div className="cardwrapper rounded-[20px]! ">
+
                       {/* Top section */}
                       <div className="bg-[#030110] rounded-t-[20px] rounded-b-[10px]">
-                        <div className="autodesinania relative rounded-t-[20px] rounded-b-[10px] px-3.5 sm:px-[15px] md:px-4 lg:px-5 xl:px-6 2xl:px-8 pt-3.5 sm:pt-[15px] md:pt-4 lg:pt-5 xl:pt-6 2xl:pt-8 pb-8 sm:pb-9 md:pb-10 lg:pb-12 xl:pb-16 2xl:pb-[83px] flex justify-start gap-[13px] sm:gap-3.5 md:gap-[15px] lg:gap-4 xl:gap-5 2xl:gap-6 flex-col">
+                        <div className="pageonetop relative rounded-t-[20px] rounded-b-[10px] px-3.5 sm:px-[15px] md:px-4 lg:px-5 xl:px-6 2xl:px-8 pt-3.5 sm:pt-[15px] md:pt-4 lg:pt-5 xl:pt-6 2xl:pt-8 pb-8 sm:pb-9 md:pb-10 lg:pb-12 xl:pb-16 2xl:pb-[83px] flex justify-start gap-[13px] sm:gap-3.5 md:gap-[15px] lg:gap-4 xl:gap-5 2xl:gap-6 flex-col">
 
                           {/* Image now fully responsive + centered + fitted */}
                           <Image className="w-8 sm:w-9 md:w-10 lg:w-12 xl:w-16 2xl:w-[68px] shadow-[0px_25px_23px_0px_#00000040] rounded-4xl" src={item.image} alt="loading ..." />
 
                           {/* Title */}
                           <h2
-                            className="autoalaidns text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]"
+                            className="pageoneh2title text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]"
                             dangerouslySetInnerHTML={{ __html: item.title }}
                           />
-                          
+
                           {/* Glow Elements (unchanged) */}
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -156,9 +156,9 @@ const Pageone = () => {
                           </svg>
                         </div>
                       </div>
-                     
+
                       {/* Bottom button */}
-                      <div className="talkewa text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] px-3.5 sm:px-[15px] md:px-4 lg:px-5 xl:px-6 2xl:px-8 py-[11px] sm:py-3 md:py-[13px] lg:py-3.5 xl:py-[15px] 2xl:py-4">
+                      <div className="pageonebutton text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] px-3.5 sm:px-[15px] md:px-4 lg:px-5 xl:px-6 2xl:px-8 py-[11px] sm:py-3 md:py-[13px] lg:py-3.5 xl:py-[15px] 2xl:py-4">
                         {item.description}
                       </div>
                     </div>
