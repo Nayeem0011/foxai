@@ -18,7 +18,7 @@ const HeroPage = () => {
       </div>
 
       <div className="flex items-center justify-center gap-8 pt-10">
-        <button className="text-white bg-[#F94819] flex items-center gap-2.5 rounded-[122px] py-4 px-8 font-normal text-[16px] leading-[120%] text-center cursor-pointer">
+        <button className="text-white bg-[#F94819] flex items-center gap-2.5 rounded-[122px] py-4 px-8 font-normal text-[16px] leading-[120%] text-center hover:bg-[#812c12] transition-shadow duration-300 cursor-pointer">
           Free Consultation
         </button>
 

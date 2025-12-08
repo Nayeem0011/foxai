@@ -46,8 +46,8 @@ const Pagetwo = () => {
   };
 
   return (
-    <div className="relative w-full bg-[#0D0D0F]">
-      <section className="w-full bg-[#aa2f0d33] backdrop-blur-[91.7px] py-[60px] sm:py-20 md:py-[100px] lg:py-[130px] xl:py-40 2xl:py-[190px] overflow-hidden rounded-[40px] relative">
+    <div className="relative w-full bg-[#030110]">
+      <section className="w-full bg-[#AF321033] backdrop-blur-[91.7px] py-[60px] sm:py-20 md:py-[100px] lg:py-[130px] xl:py-40 2xl:py-[190px] overflow-hidden rounded-[40px] relative">
         <div className='w-1/3 absolute right-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 goadsgvedfevg h-1/3 -z-1'></div>
         <div className="max-w-[1500px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-44 items-center">
 

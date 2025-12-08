@@ -39,7 +39,7 @@ const NavBar = () => {
 
         {/* Desktop Right Button */}
         <div className="hidden md:block">
-          <div className="bg-[#F94819] flex items-center gap-2.5 rounded-[50px] py-5 px-10 cursor-pointer transition-all duration-300">
+          <div className="bg-[#F94819] flex items-center gap-2.5 rounded-[50px] py-5 px-10 cursor-pointer hover:bg-[#812c12] transition-shadow duration-300">
             <button className="text-[#FFFFFF] font-normal text-[16px] leading-[120%] text-center cursor-pointer">
               Industries
             </button>
