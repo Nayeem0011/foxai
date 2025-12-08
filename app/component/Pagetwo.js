@@ -1,17 +1,120 @@
 'use client';
 
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+import { useRef, useState, useEffect } from 'react';
+import Image from 'next/image';
+import image from './image/image.png';
+import image1 from './image/image_1.png';
+import image2 from './image/image_2.png';
+import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md';
+
+const cards = [
+  { img: image, title: 'Real State & Prop Tech' },
+  { img: image1, title: 'Interior Design' },
+  { img: image2, title: 'Gaming & Entertainment' },
+];
 
 const Pagetwo = () => {
+  const scrollRef = useRef(null);
+  const [index, setIndex] = useState(0);
+
+  // ⭐ Default horizontal center scroll
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({
+        left: 400 * index, // Center card
+        behavior: 'instant',
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const scrollToCard = (i) => {
+    const pos = i * 400; // card width + gap
+    scrollRef.current?.scrollTo({ left: pos, behavior: 'smooth' });
+  };
+
+  const nextSlide = () => {
+    const newIndex = (index + 1) % cards.length;
+    setIndex(newIndex);
+    scrollToCard(newIndex);
+  };
+
+  const prevSlide = () => {
+    const newIndex = (index - 1 + cards.length) % cards.length;
+    setIndex(newIndex);
+    scrollToCard(newIndex);
+  };
 
   return (
-    <div className="relative w-full h-[1027px] bg-[#0D0D0F]">
-      {/* Background Image */}
+    <div className="relative w-full bg-[#0D0D0F]">
+      <section className="w-full bg-[#aa2f0d33] backdrop-blur-[91.7px] py-[60px] sm:py-20 md:py-[100px] lg:py-[130px] xl:py-40 2xl:py-[190px] overflow-hidden rounded-[40px] relative">
+        <div className='w-1/3 absolute right-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 goadsgvedfevg h-1/3 -z-1'></div>
+        <div className="max-w-[1500px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-44 items-center">
 
+          {/* HORIZONTAL SLIDER */}
+          <div
+            ref={scrollRef}
+            className="flex gap-10 w-full overflow-hidden scrollbar-none snap-x snap-mandatory">
+            {cards.map((card, i) => (
+              <div
+                key={i}
+                className="border-2 border-[#A9999799] bg-[#FFFFFF4D] h-[444px] rounded-[20px] snap-center shrink-0 overflow-hidden">
+                <Image
+                  src={card.img}
+                  alt={card.title}
+                  className="w-[474px] h-[356px] object-cover rounded-[20px]"
+                />
+                <div className="text-white h-20 flex items-center justify-center font-medium text-[26px] leading-[120%] text-center">
+                  {card.title}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* RIGHT SECTION (Same as before) */}
+          <div className="flex flex-col gap-8">
+            <h2 className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#FFFFFF_0%,#DBCACA_100%)] font-semibold text-[58px] leading-[112%] text-left">
+              Industries we <br className='lg:block hidden'/> specialize In
+            </h2>
+            <p className="text-white font-normal text-[18px] leading-[150%] opacity-70">
+              Al is reshaping industries worldwide, enabling <br className='lg:block hidden'/> businesses to optimize operations, enhance <br className='lg:block hidden'/> decision-making, and unlock new <br className='lg:block hidden'/> revenue streams.
+            </p>
+
+            {/* Buttons */}
+            <div className="flex items-center gap-6">
+              <button
+                onClick={prevSlide}
+                className="w-16 h-16 rounded-full bg-[#FF6433] flex items-center justify-center text-white text-xl cursor-pointer hover:bg-[#812c12] transition-shadow duration-300"
+              >
+                <MdOutlineArrowBackIos className='h-6 w-6'/>
+              </button>
+
+              <div className="flex items-center gap-2">
+                {cards.map((_, i) => (
+                  <span
+                    key={i}
+                    className={`rounded-full transition-all ${index === i
+                        ? 'w-6 h-2 bg-[#FA4C1D]'
+                        : 'w-2 h-2 bg-white/40'
+                      }`}
+                  />
+                ))}
+              </div>
+
+              <button
+                onClick={nextSlide}
+                className="w-16 h-16 rounded-full bg-[#FF6433] flex items-center justify-center text-white text-xl cursor-pointer hover:bg-[#812c12] transition-shadow duration-300"
+              >
+                <MdOutlineArrowForwardIos className='h-6 w-6'/>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
   );
-};
-
+}
 export default Pagetwo;
+
+
