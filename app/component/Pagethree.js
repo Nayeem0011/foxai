@@ -40,7 +40,7 @@ const Pagethree = () => {
             We help businesses and individuals leverage AI to drive <br className='lg:block hidden' /> growth, enhance efficiency, and foster innovation.
           </p>
 
-          <button className="text-white bg-[#F94819] w-[191px] flex items-center gap-2.5 rounded-[122px] py-4 px-9 font-normal text-[16px] leading-[120%] text-center hover:bg-[#812c12] transition-shadow duration-300 cursor-pointer">
+          <button className="text-white bg-[#F94819] w-[191px] flex items-center gap-2.5 rounded-[122px] py-4 px-9 font-normal text-[16px] leading-[120%] text-center hover:bg-[#812c12] transition-all duration-300 cursor-pointer">
             Our Testimonial
           </button>
         </div>

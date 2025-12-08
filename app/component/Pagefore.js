@@ -23,7 +23,7 @@ const Pageone = () => {
           </filter>
         </defs>
       </svg>
-      <svg width="1149" height="881" viewBox="0 0 1149 881" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="1000" height="781" viewBox="0 0 1149 881" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.6" filter="url(#filter0_f_714_285)">
           <ellipse cx="436.698" cy="440.131" rx="348.329" ry="74.3885" transform="rotate(-2.86909 436.698 440.131)" fill="#FB6B43" />
         </g>
@@ -50,7 +50,7 @@ const Pageone = () => {
           </p>
 
           <div className='flex justify-center'>
-            <button className='text-white bg-[#F94819] w-[242px] h-[47px] opacity-100 rounded-[80px] gap-2.5 py-3.5 px-6 font-normal text-[16px] leading-[120%] tracking-[0%] text-center cursor-pointer'>
+            <button className='text-white bg-[#F94819] w-[242px] h-[47px] opacity-100 rounded-[80px] gap-2.5 py-3.5 px-6 font-normal text-[16px] leading-[120%] tracking-[0%] text-center hover:bg-[#812c12] transition-all duration-300 cursor-pointer'>
               Contact us
             </button>
           </div>

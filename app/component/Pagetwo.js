@@ -84,7 +84,7 @@ const Pagetwo = () => {
             <div className="flex items-center gap-6">
               <button
                 onClick={prevSlide}
-                className="w-16 h-16 rounded-full bg-[#FF6433] flex items-center justify-center text-white text-xl cursor-pointer hover:bg-[#812c12] transition-shadow duration-300"
+                className="w-16 h-16 rounded-full bg-[#FF6433] flex items-center justify-center text-white text-xl cursor-pointer hover:bg-[#812c12] transition-all duration-300"
               >
                 <MdOutlineArrowBackIos className='h-6 w-6'/>
               </button>
@@ -103,7 +103,7 @@ const Pagetwo = () => {
 
               <button
                 onClick={nextSlide}
-                className="w-16 h-16 rounded-full bg-[#FF6433] flex items-center justify-center text-white text-xl cursor-pointer hover:bg-[#812c12] transition-shadow duration-300"
+                className="w-16 h-16 rounded-full bg-[#FF6433] flex items-center justify-center text-white text-xl cursor-pointer hover:bg-[#812c12] transition-all duration-300"
               >
                 <MdOutlineArrowForwardIos className='h-6 w-6'/>
               </button>
