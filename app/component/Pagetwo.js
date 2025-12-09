@@ -72,21 +72,23 @@ const Pagetwo = () => {
           </div>
 
           {/* RIGHT SECTION (Same as before) */}
-          <div className="flex flex-col gap-8">
-            <h2 className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#FFFFFF_0%,#DBCACA_100%)] font-semibold text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[58px] leading-[112%] text-left">
-              Industries we <br className='lg:block hidden' /> specialize In
-            </h2>
-            <p className="text-white font-normal text-[18px] leading-[150%] opacity-70">
-              Al is reshaping industries worldwide, enabling <br className='lg:block hidden' /> businesses to optimize operations, enhance <br className='lg:block hidden' /> decision-making, and unlock new <br className='lg:block hidden' /> revenue streams.
-            </p>
+          <div className="flex flex-col gap-4 sm:gap-6 md:gap-7 lg:gap-8">
+            <div className='order-2 lg:order-1 flex flex-col gap-4 sm:gap-6 md:gap-7 lg:gap-8'>
+              <h2 className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#FFFFFF_0%,#DBCACA_100%)] font-semibold text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[58px] leading-[112%] text-left">
+                Industries we <br className='lg:block hidden' /> specialize In
+              </h2>
+              <p className="text-white font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] leading-[150%] opacity-70">
+                Al is reshaping industries worldwide, enabling <br className='lg:block hidden' /> businesses to optimize operations, enhance <br className='lg:block hidden' /> decision-making, and unlock new <br className='lg:block hidden' /> revenue streams.
+              </p>
+            </div>
 
             {/* Buttons */}
-            <div className="flex items-center gap-6">
+            <div className="order-1 lg:order-3 flex items-center gap-3 sm:gap-4 md:gap-6">
               <button
                 onClick={prevSlide}
-                className="w-16 h-16 rounded-full bg-[#FF6433] flex items-center justify-center text-white text-xl cursor-pointer hover:bg-[#812c12] transition-all duration-300"
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full bg-[#FF6433] flex items-center justify-center text-white text-xl cursor-pointer hover:bg-[#812c12] transition-all duration-300"
               >
-                <MdOutlineArrowBackIos className='h-6 w-6' />
+                <MdOutlineArrowBackIos className='h-3 sm:h-4 md:h-5 lg:h-6 w-3 sm:w-4 md:w-5 lg:w-6' />
               </button>
 
               <div className="flex items-center gap-2">
@@ -103,9 +105,9 @@ const Pagetwo = () => {
 
               <button
                 onClick={nextSlide}
-                className="w-16 h-16 rounded-full bg-[#FF6433] flex items-center justify-center text-white text-xl cursor-pointer hover:bg-[#812c12] transition-all duration-300"
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full bg-[#FF6433] flex items-center justify-center text-white text-xl cursor-pointer hover:bg-[#812c12] transition-all duration-300"
               >
-                <MdOutlineArrowForwardIos className='h-6 w-6' />
+                <MdOutlineArrowForwardIos className='h-3 sm:h-4 md:h-5 lg:h-6 w-3 sm:w-4 md:w-5 lg:w-6' />
               </button>
             </div>
           </div>
