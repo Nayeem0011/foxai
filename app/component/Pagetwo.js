@@ -77,7 +77,7 @@ const Pagetwo = () => {
               <h2 className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#FFFFFF_0%,#DBCACA_100%)] font-semibold text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[58px] leading-[112%] text-left">
                 Industries we <br className='lg:block hidden' /> specialize In
               </h2>
-              <p className="text-white font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] leading-[150%] opacity-70">
+              <p className="text-white font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[150%] opacity-70">
                 Al is reshaping industries worldwide, enabling <br className='lg:block hidden' /> businesses to optimize operations, enhance <br className='lg:block hidden' /> decision-making, and unlock new <br className='lg:block hidden' /> revenue streams.
               </p>
             </div>

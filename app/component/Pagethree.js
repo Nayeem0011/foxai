@@ -36,12 +36,12 @@ const Pagethree = () => {
           <h1 className='tradines font-semibold text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] leading-[120%]'>
             Empowering Businesses <br className='lg:block hidden' /> and Individuals with AI <br className='lg:block hidden' /> Growth
           </h1>
-          <p className='text-[#9999A9] font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] leading-[150%]'>
+          <p className='text-[#9999A9] font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[150%]'>
             We help businesses and individuals leverage AI to drive <br className='lg:block hidden' /> growth, enhance efficiency, and foster innovation.
           </p>
 
           <div className=''>
-            <button className="text-white bg-[#F94819] flex items-center gap-2.5 rounded-[20px] py-2.5 px-5 sm:py-3 sm:px-7 md:py-3.5 md:px-8 lg:py-4 lg:px-9 font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] text-center hover:bg-[#812c12] transition-all duration-300 cursor-pointer">
+            <button className="text-white bg-[#F94819] flex items-center gap-2.5 rounded-[20px] py-2.5 px-5 sm:py-3 sm:px-7 md:py-3.5 md:px-8 lg:py-4 lg:px-9 font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[120%] text-center hover:bg-[#812c12] transition-all duration-300 cursor-pointer">
               Our Testimonial
             </button>
           </div>
@@ -71,7 +71,7 @@ const Pagethree = () => {
                 <h1 className="text-white font-medium text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[50px] leading-[120%] -mt-3">
                   {stat.value}
                 </h1>
-                <p className="text-[#9999A9] font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] leading-[130%]">
+                <p className="text-[#9999A9] font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[130%]">
                   {stat.description.split(' ').map((word, idx) => (
                     <span key={idx}>
                       {word}{' '}

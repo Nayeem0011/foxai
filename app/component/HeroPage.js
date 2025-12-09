@@ -12,7 +12,7 @@ const HeroPage = () => {
         <h1 className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#FFFFFF_0%,#DBCACA_100%)] font-bold text-[26px] sm:text-[30px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[61px] leading-[120%] text-center">
           Pioneering Intelligence Shaping <br className="hidden md:block" /> the Future with Vision
         </h1>
-        <p className="text-[#ADADAD] font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] leading-[150%] text-center pt-3 md:pt-5 lg:pt-7 xl:pt-8">
+        <p className="text-[#ADADAD] font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] leading-[150%] text-center pt-3 md:pt-5 lg:pt-7 xl:pt-8">
           Al consulting redefined with best visionary intelligence. We craft tailored solutions to <br className="hidden md:block" /> supercharge your digital transformation.
         </p>
       </div>
