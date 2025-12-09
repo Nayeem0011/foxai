@@ -28,7 +28,7 @@ const NavBar = () => {
               <li
                 key={index}
                 onClick={() => setActive(index)}
-                className={` font-normal text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] text-center cursor-pointer py-0 px-0 lg:py-2.5 lg:px-4 transition-all duration-300 rounded-full 
+                className={`font-instrument font-normal text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] text-center cursor-pointer py-0 px-0 lg:py-2.5 lg:px-4 transition-all duration-300 rounded-full 
               ${isActive ? "bg-[#15081459] text-white py-2.5 px-4" : ""}
               hover:bg-[#15081459] hover:text-white hover:py-2.5 hover:px-4`}>
                 {item}
@@ -40,7 +40,7 @@ const NavBar = () => {
         {/* Desktop Right Button */}
         <div className="hidden md:block">
           <div className="bg-[#F94819] flex items-center gap-2.5 rounded-[50px] py-2.5 px-5 lg:py-5 lg:px-10 cursor-pointer hover:bg-[#812c12] transition-all duration-300">
-            <button className="text-[#FFFFFF] font-normal text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] text-center cursor-pointer">
+            <button className="font-instrument text-[#FFFFFF] font-normal text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] text-center cursor-pointer">
               Industries
             </button>
           </div>
@@ -74,7 +74,7 @@ const NavBar = () => {
                 setActive(index);
                 setOpen(false);
               }}
-              className={`cursor-pointer py-2 rounded-lg transition-all duration-300 
+              className={`font-instrument font-normal cursor-pointer py-2 rounded-lg transition-all duration-300 
                 ${active === index ? "bg-[#15081459] px-3" : ""}
                 hover:bg-[#15081459] px-3`}>
               {item}
@@ -84,7 +84,7 @@ const NavBar = () => {
 
         {/* Mobile Bottom Button */}
         <div className="px-6 mt-8">
-          <button className="w-full bg-[#F94819] text-white py-3 rounded-full text-[16px] cursor-pointer hover:bg-[#812c12] transition-all duration-300">
+          <button className="font-instrument font-normal w-full bg-[#F94819] text-white py-3 rounded-full text-[16px] cursor-pointer hover:bg-[#812c12] transition-all duration-300">
             Industries
           </button>
         </div>

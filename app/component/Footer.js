@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2">
           <div className="flex flex-col gap-3 sm:gap-4 md:gap-5">
             <Image className="w-20 sm:w-[100px] md:w-[130px] lg:w-[150px]" src={fooder_logo} alt="loading ..." />
-            <p className="text-[#9999A9] font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[150%] tracking-[0%]">
+            <p className="font-instrument text-[#9999A9] font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[150%] tracking-[0%]">
               Powered by Visionary Intelligence. Fully <br className='lg:block hidden' /> controlled artificial intelligence.
             </p>
 
@@ -55,14 +55,14 @@ const Footer = () => {
             {footerMenus.map((menu, idx) => (
               <div key={idx}>
                 <ul className="flex flex-col gap-3 sm:gap-4 md:gap-6">
-                  <p className="text-[#E7E8FC] font-semibold text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] leading-[150%] tracking-[0%]">
+                  <p className="font-instrument text-[#E7E8FC] font-semibold text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] leading-[150%] tracking-[0%]">
                     {menu.title}
                   </p>
 
                   {menu.items.map((item, i) => (
                     <li
                       key={i}
-                      className="text-[#9999A9] font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%] tracking-[0%] cursor-pointer hover:text-[#F94819] transition-all duration-300"
+                      className="font-instrument text-[#9999A9] font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%] tracking-[0%] cursor-pointer hover:text-[#F94819] transition-all duration-300"
                     >
                       {item}
                     </li>

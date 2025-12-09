@@ -42,15 +42,15 @@ const Pageone = () => {
         {/* Optional: overlay or content */}
         <div className="h-full w-full relative flex flex-col gap-3 sm:gap-5 md:gap-7 lg:gap-8 pt-28 md:pt-32 px-4 lg:px-0">
           {/* Example content */}
-          <h1 className="text-white font-semibold text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] leading-[120%] text-center">
+          <h1 className="font-instrument text-white font-semibold text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] leading-[120%] text-center">
             Let&apos;s Build The future Together!
           </h1>
-          <p className='text-[#FFFAF0] font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[150%] tracking-[0%] text-center'>
+          <p className='font-instrument text-[#FFFAF0] font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[150%] tracking-[0%] text-center'>
             We help businesses and individuals leverage AI to drive growth, enhance <br className='lg:block hidden' /> efficiency, and foster innovation.
           </p>
 
           <div className='flex justify-center'>
-            <button className='text-white bg-[#F94819] opacity-100 rounded-[80px] gap-2.5 py-2.5 md:py-3.5 px-6 sm:px-8 md:px-14 lg:px-18 font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[120%] tracking-[0%] text-center hover:bg-[#812c12] transition-all duration-300 cursor-pointer'>
+            <button className='font-instrument text-white bg-[#F94819] opacity-100 rounded-[80px] gap-2.5 py-2.5 md:py-3.5 px-6 sm:px-8 md:px-14 lg:px-18 font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[120%] tracking-[0%] text-center hover:bg-[#812c12] transition-all duration-300 cursor-pointer'>
               Contact us
             </button>
           </div>

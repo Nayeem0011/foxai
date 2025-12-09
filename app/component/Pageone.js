@@ -72,7 +72,7 @@ const Pageone = () => {
             <div className='container mx-auto'>
 
               {/* Title */}
-              <h2 className='pageonetitle text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] pb-6 sm:pb-8 md:pb-9 lg:pb-10 xl:pb-12 2xl:pb-16'>
+              <h2 className='pageonetitle font-instrument text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] pb-6 sm:pb-8 md:pb-9 lg:pb-10 xl:pb-12 2xl:pb-16'>
                 Pioneering AI consulting to drive innovation, <br className='lg:block hidden' /> efficiency, and growth for businesses.
               </h2>
 
@@ -92,7 +92,7 @@ const Pageone = () => {
 
                           {/* Title */}
                           <h2
-                            className="pageoneh2title text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]"
+                            className="pageoneh2title font-instrument text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]"
                             dangerouslySetInnerHTML={{ __html: item.title }}
                           />
 
@@ -158,7 +158,7 @@ const Pageone = () => {
                       </div>
 
                       {/* Bottom button */}
-                      <div className="pageonebutton text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] px-3.5 sm:px-[15px] md:px-4 lg:px-5 xl:px-6 2xl:px-8 py-[11px] sm:py-3 md:py-[13px] lg:py-3.5 xl:py-[15px] 2xl:py-4">
+                      <div className="pageonebutton font-instrument text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] px-3.5 sm:px-[15px] md:px-4 lg:px-5 xl:px-6 2xl:px-8 py-[11px] sm:py-3 md:py-[13px] lg:py-3.5 xl:py-[15px] 2xl:py-4">
                         {item.description}
                       </div>
                     </div>

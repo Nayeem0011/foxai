@@ -64,7 +64,7 @@ const Pagetwo = () => {
                   alt={card.title}
                   className="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] xl:w-[474px] h-[180px] sm:h-[220px] md:h-[300px] lg:h-[356px] object-cover rounded-[20px]"
                 />
-                <div className="text-white h-14 sm:h-16 md:h-18 lg:h-20 flex items-center justify-center font-medium text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[26px] leading-[120%] text-center">
+                <div className="font-instrument text-white h-14 sm:h-16 md:h-18 lg:h-20 flex items-center justify-center font-medium text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[26px] leading-[120%] text-center">
                   {card.title}
                 </div>
               </div>
@@ -74,10 +74,10 @@ const Pagetwo = () => {
           {/* RIGHT SECTION (Same as before) */}
           <div className="flex flex-col gap-4 sm:gap-6 md:gap-7 lg:gap-8">
             <div className='order-2 lg:order-1 flex flex-col gap-4 sm:gap-6 md:gap-7 lg:gap-8'>
-              <h2 className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#FFFFFF_0%,#DBCACA_100%)] font-semibold text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[58px] leading-[112%] text-left">
+              <h2 className="font-instrument text-transparent bg-clip-text bg-[linear-gradient(90deg,#FFFFFF_0%,#DBCACA_100%)] font-semibold text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[58px] leading-[112%] text-left">
                 Industries we <br className='lg:block hidden' /> specialize In
               </h2>
-              <p className="text-white font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[150%] opacity-70">
+              <p className="font-instrument text-white font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[150%] opacity-70">
                 Al is reshaping industries worldwide, enabling <br className='lg:block hidden' /> businesses to optimize operations, enhance <br className='lg:block hidden' /> decision-making, and unlock new <br className='lg:block hidden' /> revenue streams.
               </p>
             </div>
