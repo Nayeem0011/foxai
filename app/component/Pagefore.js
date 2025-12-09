@@ -9,7 +9,7 @@ import bgImage from './image/Group1000006009.png';
 const Pageone = () => {
 
   return (
-    <section className="relative w-full bg-[#030110] h-[480px]">
+    <section className="relative w-full bg-[#030110] h-[330px] md:h-[420] lg:h-[480px]">
 
       <svg className='w-1/4 absolute right-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 goadsgvedfevg h-1/4 z-10' viewBox="0 0 1138 1347" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_f_714_195)">
@@ -40,17 +40,17 @@ const Pageone = () => {
         <Image src={bgImage} alt="loading ..." fill className="object-cover" priority />
 
         {/* Optional: overlay or content */}
-        <div className="h-full w-full relative flex flex-col gap-8 pt-32">
+        <div className="h-full w-full relative flex flex-col gap-3 sm:gap-5 md:gap-7 lg:gap-8 pt-28 md:pt-32 px-4 lg:px-0">
           {/* Example content */}
-          <h1 className="text-white font-semibold text-[48px] leading-[120%] text-center">
+          <h1 className="text-white font-semibold text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] leading-[120%] text-center">
             Let&apos;s Build The future Together!
           </h1>
-          <p className='text-[#FFFAF0] font-normal text-[18px] leading-[150%] tracking-[0%] text-center'>
+          <p className='text-[#FFFAF0] font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] leading-[150%] tracking-[0%] text-center'>
             We help businesses and individuals leverage AI to drive growth, enhance <br className='lg:block hidden' /> efficiency, and foster innovation.
           </p>
 
           <div className='flex justify-center'>
-            <button className='text-white bg-[#F94819] w-[242px] h-[47px] opacity-100 rounded-[80px] gap-2.5 py-3.5 px-6 font-normal text-[16px] leading-[120%] tracking-[0%] text-center hover:bg-[#812c12] transition-all duration-300 cursor-pointer'>
+            <button className='text-white bg-[#F94819] opacity-100 rounded-[80px] gap-2.5 py-2.5 md:py-3.5 px-6 sm:px-8 md:px-14 lg:px-18 font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] tracking-[0%] text-center hover:bg-[#812c12] transition-all duration-300 cursor-pointer'>
               Contact us
             </button>
           </div>
