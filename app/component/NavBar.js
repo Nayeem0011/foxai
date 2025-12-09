@@ -17,7 +17,7 @@ const NavBar = () => {
       <nav className="bg-[#FFFFFF1A] backdrop-blur-[20px] flex items-center justify-between w-full max-w-[80%] py-3.5 px-5 rounded-[50px] absolute top-[46px] border border-[#FFFFFF1A]">
 
         {/* Logo */}
-        <Image className="w-[116px]" src={navbar_logo} alt="loading ..."/>
+        <Image className="w-20 md:w-[100px] lg:w-[116px]" src={navbar_logo} alt="loading ..." />
 
         {/* Desktop Menu */}
         <ul className="text-[#B0ADBE] hidden md:flex items-center gap-4 transition-all duration-300">
@@ -28,7 +28,7 @@ const NavBar = () => {
               <li
                 key={index}
                 onClick={() => setActive(index)}
-                className={` font-normal text-[16px] leading-[120%] text-center cursor-pointer py-2.5 px-4 transition-all duration-300 rounded-full 
+                className={` font-normal text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] text-center cursor-pointer py-0 px-0 lg:py-2.5 lg:px-4 transition-all duration-300 rounded-full 
               ${isActive ? "bg-[#15081459] text-white py-2.5 px-4" : ""}
               hover:bg-[#15081459] hover:text-white hover:py-2.5 hover:px-4`}>
                 {item}
@@ -39,8 +39,8 @@ const NavBar = () => {
 
         {/* Desktop Right Button */}
         <div className="hidden md:block">
-          <div className="bg-[#F94819] flex items-center gap-2.5 rounded-[50px] py-5 px-10 cursor-pointer hover:bg-[#812c12] transition-all duration-300">
-            <button className="text-[#FFFFFF] font-normal text-[16px] leading-[120%] text-center cursor-pointer">
+          <div className="bg-[#F94819] flex items-center gap-2.5 rounded-[50px] py-2.5 px-5 lg:py-5 lg:px-10 cursor-pointer hover:bg-[#812c12] transition-all duration-300">
+            <button className="text-[#FFFFFF] font-normal text-[14px] md:text-[15px] lg:text-[16px] leading-[120%] text-center cursor-pointer">
               Industries
             </button>
           </div>
@@ -50,7 +50,7 @@ const NavBar = () => {
         <button
           className="md:hidden block cursor-pointer"
           onClick={() => setOpen(true)}>
-          <Menu size={28} className="text-white" />
+          <Menu size={26} className="text-white" />
         </button>
       </nav>
 
@@ -61,7 +61,7 @@ const NavBar = () => {
         {/* Close Button */}
         <div className="flex justify-end p-6">
           <button onClick={() => setOpen(false)}>
-            <X size={28} className="text-white cursor-pointer" />
+            <X size={26} className="text-white cursor-pointer" />
           </button>
         </div>
 
